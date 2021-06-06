@@ -34,13 +34,14 @@
 	<div id="row">
 	<div id="Client">
 	  <h3>Filter Products</h3>
-	  <p>Filter By:</p>
+	  <p>Filter By:
 		<div id = "dietInput" class = "dietBlock">
 		<input id="LactoseFree" class = dietSelect type = checkbox name= "LactoseFree" value="LactoseFree" onchange="populateListProductChoices(this.id, 'displayProduct')">Lactose Free</option>
 	  <br><input id="NutFree" class = dietSelect type = checkbox name="NutFree" value="NutFree" onchange="populateListProductChoices(this.id, 'displayProduct')">Nut Free</option>
 		<br><input id="Organic" class = dietSelect type = checkbox name="Organic" value="Organic" onchange="populateListProductChoices(this.id, 'displayProduct')">Organic</option>
 	  <br><input id="None" class = dietSelect type = checkbox name="None" value="None" onchange="populateListProductChoices(this.id, 'displayProduct')">None</option>
 		</div>
+		</p>
 		<br>
 	</div>
 	<div id="ProductContent">
@@ -83,5 +84,21 @@
 <script src="scripts/locations.js"></script>
 <script src="scripts/main.js"></script>
 	<p id="signature">site created by chellefish</p>
+	<div class="directory">
+		<div class="dirColumn">
+		<h4>Site Navigation
+			<br>
+		<button id ="direct" class="tablinks" onclick="openInfo(event, 'Home')">Home</button>
+		<br>
+	  <button id ="direct" class="tablinks" onclick="openInfo(event, 'Products')">Products</button>
+		</h4>
+		</div>
+		<div class="dirColumn">
+			<h4>Contact Us
+				<br>
+		<button id ="direct" class="tablinks" onclick="openInfo(event, 'Locations')">Locations</button>
+		</h4>
+	</div>
+	</div>
 </body>
 </html>

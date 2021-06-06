@@ -23,7 +23,14 @@ https://www.walmart.ca/en/ip/natrel-fine-filtered-2-milk/6000100070995
 http://blogs.kentlaw.iit.edu/iscotus/supreme-court-great-tomato-debate/
 https://tribulant.com/blog/wordpress/easy-embedding-a-google-map-with-multiple-markers-to-your-site/
 */
-
+h4{
+  font-family: 'Verdana', sans-serif;
+  font-size: 16px;
+  color: white;
+  text-align: left;
+  margin-left: 20px;
+  background-color: E76F51
+}
 h1{
   background-color: #264653;
   font-size: 40px;
@@ -192,7 +199,6 @@ label{
   text-align: left;
 }
 #Pickup{
-
   background: none!important;
   border: none;
   padding: 0!important;
@@ -299,8 +305,26 @@ label{
   height: 150px;
   text-align: center;
 }
-
-
+#direct{
+    background: inherit;
+    border: none;
+    padding: 0!important;
+    /*optional*/
+    font-family: Verdana, sans-serif;
+    /*input has OS specific font-family*/
+    color: white;
+    font-size: 16px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.directory{
+  display: flex;
+}
+.dirColumn{
+  float: left;
+  width: 20%;
+  padding: 10px;
+}
 #signature {
   text-align: right;
   color: black;
