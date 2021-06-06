@@ -7,7 +7,7 @@ var locations = [
 	{
 		city: "Trois-Rivieres",
     phone: "338-494-4530",
-		address: "34 Boulevard des Forges"
+		address: "34 Rue Chapleau"
 	},
 	{
 		city: "Ottawa",
