@@ -12,7 +12,7 @@ var locations = [
 	{
 		city: "Ottawa",
     phone: "613-494-4630",
-		address: "63 Meadowlands Dr E"
+		address: "63 Cooper St"
 	},
 	{
 		city: "Barrie",
