@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp>-->
+	<link href="styles/style.css" rel="stylesheet" type="text/css">
+	<title>Michelle's Market</title>
+</head>
+<h1>Michelle's Market</h1>
+
+<body>
+<!-- Tab links, each one with an onclick event associated with it -->
+<div class="tab">
+	<button class="tablinks" onclick="openInfo(event, 'Home')">Home</button>
+  <button class="tablinks" onclick="openInfo(event, 'Products')">Products</button>
+	<div id="RightTab">
+		<button class="tablinks" onclick="openInfo(event, 'Locations')">Locations</button>
+  	<button class="tablinks" onclick="openInfo(event, 'Cart')">Cart</button>
+	</div>
+</div>
+
+<!-- Tab content -->
+<div id="Home" class="tabcontent">
+	<div class="homeContainer">
+	<img src="images/homepage.jpg"></img>
+	<div class="homepage-text"> <h3 id= "home-title">Eat Well, <br> Live Well</h3>
+		<p id="home-desc">Here at Michelle's Market, we have the best products at the best prices!</p>
+		<button id = "Start" class="tablinks" onclick="openInfo(event, 'Products')">Shop Now</button>
+	</div>
+
+</div>
+</div>
+
+<div id="Products" class="tabcontent">
+	<div id="row">
+	<div id="Client">
+	  <h3>Filter Products</h3>
+	  <p>Filter By:</p>
+		<div id = "dietInput" class = "dietBlock">
+		<input id="LactoseFree" class = dietSelect type = checkbox name= "LactoseFree" value="LactoseFree" onchange="populateListProductChoices(this.id, 'displayProduct')">Lactose Free</option>
+	  <br><input id="NutFree" class = dietSelect type = checkbox name="NutFree" value="NutFree" onchange="populateListProductChoices(this.id, 'displayProduct')">Nut Free</option>
+		<br><input id="Organic" class = dietSelect type = checkbox name="Organic" value="Organic" onchange="populateListProductChoices(this.id, 'displayProduct')">Organic</option>
+	  <br><input id="None" class = dietSelect type = checkbox name="None" value="None" onchange="populateListProductChoices(this.id, 'displayProduct')">None</option>
+		</div>
+		<br>
+	</div>
+	<div id="ProductContent">
+  <h3>Products</h3>
+	 <div id="displayProduct" class = "displayProduct"> </div>
+	</div>
+</div>
+</div>
+
+<div id="Locations" class="tabcontent">
+	<div id="row">
+	<div id="Map">
+	<h3>Locations</h3>
+<iframe src="https://www.google.com/maps/d/u/1/embed?mid=1LVoT1-ETi9Yb5ZIDlXrv088uMSCgDXLW" width="400" height="400"></iframe>
+	</div>
+	<div id="displayLocations">
+	</div>
+</div>
+</div>
+
+
+<div id="Cart" class="tabcontent">
+  <h3>Cart</h3>
+  <div id="displayCart">
+		<p>Your Cart is Empty.</p>
+	</div>
+	<div class = "right">
+	<button id = "Pickup" class="tablinks" onclick="listLocations()">Pick Up In Store</button>
+	<button id="checkout" type="button" class="block">
+	 CHECKOUT
+ </button>
+</div>
+</div>
+
+<div id="Map" class = "map">
+
+</div>
+
+<script src="scripts/groceries.js"></script>
+<script src="scripts/locations.js"></script>
+<script src="scripts/main.js"></script>
+	<p id="signature">site created by chellefish</p>
+</body>
+</html>

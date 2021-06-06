@@ -1,0 +1,309 @@
+/* This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp> */
+/*
+colours:
+264653
+2A9D8F
+E9C46A
+F4A261
+E76F51
+
+https://www.walmart.ca/en/ip/la-fournee-doree-sliced-brioche-loaf/6000199172505
+https://www.w3schools.com/css/tryit.asp?filename=trycss_image_gallery
+https://dissolve.com/stock-photo/Nutritious-food-layout-tray-wooden-royalty-free-image/101-D2115-120-323
+https://solidstarts.com/foods/broccoli/
+https://www.cookingclassy.com/homemade-bread/
+https://bigcountryraw.ca/product/salmon-fillets-1-lb/
+https://www.heb.com/product-detail/silk-original-unsweetened-almond-milk/1428405
+https://www.walmart.ca/en/ip/apple-gala/6000195494284
+https://www.livescience.com/45005-banana-nutrition-facts.html
+https://www.walmart.ca/en/ip/sealtest-10-half-half-coffee-cream/6000200453100
+https://well.ca/products/nuts-to-you-organic-crunchy-peanut_22535.html
+http://organicmeadow.com/products/organic-butter/Grass-Fed-Lightly-Salted-Butter.htm
+https://www.walmart.ca/en/ip/natrel-fine-filtered-2-milk/6000100070995
+http://blogs.kentlaw.iit.edu/iscotus/supreme-court-great-tomato-debate/
+https://tribulant.com/blog/wordpress/easy-embedding-a-google-map-with-multiple-markers-to-your-site/
+*/
+
+h1{
+  background-color: #264653;
+  font-size: 40px;
+  font-family: 'Georgia', sans-serif;
+  text-align: center;
+  margin: 0px;
+  padding: 40px 0;
+	color: #FFFFFF;  /* white text */
+
+}
+h3{
+  font-family: 'Verdana', sans-serif;
+  font-size: 16px;
+  color: black;
+  text-align: left;
+  margin-left: 20px;
+  background-color: E76F51
+}
+h2{
+  font-family: 'Verdana', sans-serif;
+  font-size: 14px;
+  color: black;
+  text-align: left;
+  margin-left: 20px;
+  font-weight: bold;
+}
+p{
+  font-family: 'Verdana', sans-serif;
+  font-size: 14px;
+  color: black;
+  text-align: left;
+  margin-left: 20px;
+}
+
+body{
+  background-color: #2A9D8F;
+}
+
+.dietBlock{
+  display: block;
+  border: none;
+  background-color: inherit;
+  padding: 14px 28px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: 'Verdana', sans-serif;
+  color: black;
+  text-align: left;
+}
+.block{
+  display: block;
+  background-color: #E76F51;
+  border: none;
+
+  margin: auto;
+  width: 50%;
+  padding: 5px;
+
+  font-family: Verdana, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+
+}
+.displayProduct{
+  display: block;
+  margin: auto;
+  width: 100%
+  padding: 10px;
+
+}
+.listSelected{
+  display: inline-block;
+  margin: auto;
+  width: 40%;
+  padding: 10px;
+
+  background-color: inherit;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: 'Verdana', sans-serif;
+  color: black;
+  text-align: left;
+}
+label{
+  display: inline-block;
+  background-color: inherit;
+  padding: 14px 28px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: 'Verdana', sans-serif;
+  color: black;
+}
+
+
+
+#price{
+  font-size = 16px;
+  font-family: 'Verdana', sans-serif;
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+  text-align: left;
+}
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #F4A261;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+
+  font-family: Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #E9C46A;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #E9C46A;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+.homeContainer{
+  text-align: center;
+  position: relative;
+}
+.homepage-text{
+  position: absolute; /* Sit on top of the page content */
+  top: 0px;
+  left: 10px;
+  bottom: 75px;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: fit-content;
+  padding-bottom: 50px;
+  width: 300px;
+  text-align: left;
+}
+#Pickup{
+
+  background: none!important;
+  border: none;
+  padding: 0!important;
+  /*optional*/
+  font-family: Verdana, sans-serif;
+  /*input has OS specific font-family*/
+  color: #069;
+  font-size: 16px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+#Client{
+  background-color: white;
+  width: 25%;
+  float: left;
+}
+#ProductContent{
+  background-color: white;
+  float: right;
+  width: 75%;
+}
+#Locations{
+  text-align: center;
+  background-color: white;
+}
+#ProductCount{
+  text-align: right;
+  margin-right: 150px;
+}
+#Cart{
+  background-color: white;
+}
+
+#RightTab{
+  float: right;
+}
+
+#row{
+  display: flex;
+}
+#map{
+  height: 400px;
+  width: 25%;
+}
+#Start{
+  display: block;
+  background-color: #E76F51;
+  border: none;
+
+  margin-left: 20px;
+  width: 50%;
+  padding: 8px;
+
+  font-family: Verdana, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+#home-desc{
+  color: white;
+  font-weight: normal;
+  text-align: left;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+#home-title{
+  font-family: 'Verdana', sans-serif;
+  font-weight: bold;
+  color: white;
+  font-size: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+#checkout{
+  display: block;
+  background-color: #E76F51;
+  border: none;
+  margin: auto;
+  width: 20%;
+  padding: 8px;
+
+  font-family: Verdana, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+.right{
+  text-align: right;
+}
+
+.container{
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 250px;
+  height: 250px;
+  text-align: center;
+}
+.locationContainer{
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 200px;
+  height: 150px;
+  text-align: center;
+}
+
+
+#signature {
+  text-align: right;
+  color: black;
+  font-family: 'Verdana', sans-serif;
+  font-size: 75%;
+}
